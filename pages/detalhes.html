@@ -12,14 +12,20 @@
 
     <main class="container">
         <h1>Detalhes da Tarefa</h1>
-
+        <a href="dashboard.html" class="btn-voltar">← Voltar</a>
         <article class="card">
             <h2>Estudar HTML</h2>
+
             <p><strong>Descrição:</strong> Revisar semântica e acessibilidade</p>
             <p><strong>Data:</strong> 10/04/2026</p>
-            <p class="status-pendente">
-                <strong>Status:</strong> Pendente
+
+            <p>
+                <strong>Status:</strong>
+                <span id="status-texto" class="status-pendente">Pendente</span>
             </p>
+
+            <button onclick="alternarStatus()">Alterar Status</button>
+
             <a href="editar.html">Editar tarefa</a>
         </article>
     </main>
@@ -27,7 +33,7 @@
     <footer>
         <p>© 2026 Sistema Gerenciador de Tarefas</p>
     </footer>
-
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

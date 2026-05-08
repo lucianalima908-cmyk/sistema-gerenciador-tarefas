@@ -216,3 +216,46 @@ footer {
     font-size: 0.9rem;
     color: #94a3b8;
 }
+
+/* NOTIFICAÇÃO */
+.notificacao {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem 1.5rem;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+.btn-cancelar {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #94a3b8;
+    text-decoration: none;
+}
+
+.btn-cancelar:hover {
+    color: white;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* STATUS */
+.status-pendente {
+    color: var(--cor-perigo);
+    font-weight: bold;
+}
+
+.status-concluida {
+    color: var(--cor-sucesso);
+    font-weight: bold;
+}
